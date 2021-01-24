@@ -10,21 +10,18 @@ import history from '../../history';
 class SignUpForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-        const links = [
+        const info = [
             {
                 _id: 0,
-                title: 'Not Registered? Create account here',
-                onClick: () => historypushState('/signup')
+                title: 'At least 6 characters',
             },
             {
                 _id: 1,
-                title: 'Forgot account email?',
-                onClick: () => console.log('forgot email')
+                title: 'At least one number',
             },
             {
                 _id: 2,
-                title: 'Forgot password?? Create account here',
-                onClick: () => console.log('forgot password')
+                title: 'At least one symbol'
             }
         ]
         return (
@@ -68,7 +65,7 @@ class SignUpForm extends Component {
                 name='back'
                 short={true}
                 component={FormButton}/>
-                <Details className='sign-up-form__details' title='Quicklinks' links={links}/>
+                <Details className='sign-up-form__details' title='Password requirements' info={info}/>
             </form>
         )
     }
