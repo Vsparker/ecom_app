@@ -15,92 +15,93 @@ export function fetchUserPurchases() {
         payload: [
             {
                 _id: 0,
-                total: 19440,
-                orderNumber: 'A6048248343',
-                orderDate: new Date(),
-                creditCard: '-0400',
-                user: {
-                    name: 'Joran Hudgens',
-                    shippingAddress: '1234 East State Street'
-                }
-                },
-            {
-                _id: 1,
                 total: 19.40,
-                orderNumber: 'A0048248346',
-                orderDate: new Date(),
+                orderNumber: 'A0048248343',
+                orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Jordan Herr',
-                    shippingAddress: '1234 North State Street'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
-                },
+            },
+            {
+                _id: 1,
+                total: 1.30,
+                orderNumber: '24343sdfkjh72',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
+                user: {
+                    name: 'Maxwell Nelson',
+                    shippingAddress: '1337 West State Street'
+                }
+            },
             {
                 _id: 2,
-                total: 19.40,
-                orderNumber: 'A0048268343',
-                orderDate: new Date(),
-                creditCard: '-0040',
+                total: 1.30,
+                orderNumber: 'B0048248343',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
                 user: {
-                    name: 'Jordan James',
-                    shippingAddress: '1234 South State Street'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
-                },
+            },
             {
                 _id: 3,
-                total: 19.40,
-                orderNumber: 'A0048246343',
-                orderDate: new Date(),
-                creditCard: '-0050',
+                total: 16.40,
+                orderNumber: 'ADFasdlfkjwe',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
                 user: {
-                    name: 'Jordan Akins',
-                    shippingAddress: '1234 Bomb State Street'
+                    name: 'Max Asher Nelson',
+                    shippingAddress: '1234 West State Street'
                 }
-                },
+            },
             {
                 _id: 4,
                 total: 19.40,
-                orderNumber: 'A0048248363',
-                orderDate: new Date(),
-                creditCard: '-0060',
+                orderNumber: 'A0048248343',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
                 user: {
-                    name: 'Jordan Lee',
-                    shippingAddress: '1234 Tree State Street'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
-                },
+            },
             {
                 _id: 5,
                 total: 19.40,
-                orderNumber: 'A0546248343',
-                orderDate: new Date(),
-                creditCard: '-0007',
+                orderNumber: 'A0048248343',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
                 user: {
-                    name: 'Jake Kim',
-                    shippingAddress: '1q34 Cola State Street'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
-                },
-            {
-                _id: 5,
-                total: 19.40,
-                orderNumber: 'A0248248363',
-                orderDate: new Date(),
-                creditCard: '-0060',
-                user: {
-                    name: 'Joe Lee',
-                    shippingAddress: '1334 Tree State Street'
-                }
-                },
+            },
             {
                 _id: 6,
                 total: 19.40,
-                orderNumber: 'A0048348363',
-                orderDate: new Date(),
-                creditCard: '-0060',
+                orderNumber: 'A0048248343',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
                 user: {
-                    name: 'Bob Lee',
-                    shippingAddress: '1434 Tree State Street'
-                }                 
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
+                }
             },
+            {
+                _id: 7,
+                total: 3.20,
+                orderNumber: '5UFISHDFJASUSHI298',
+                orderDate: new Date().toDateString(),
+                creditCard: '-0000',
+                user: {
+                    name: 'Andrew Wold',
+                    shippingAddress: '348 Yo State Street'
+                }
+            },
+          
         ]
     })
 }
