@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -30,7 +30,7 @@ function main() {
             <Route path='/account' exact component={Account}/>
 
             <Route path='/shop' exact component={Shop}/>
-            
+
           </Switch>
         </Layout>
       </Router>
