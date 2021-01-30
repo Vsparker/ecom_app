@@ -1,6 +1,5 @@
 import {
     SET_PURCHASE_DETAIL,
-    SET_PURCHASE_DETAIL,
     SET_CART_PRODUCTS
 } from '../actions/types';
 
