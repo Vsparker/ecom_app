@@ -1,14 +1,13 @@
 
 
-html{
+html {
     font-size: 62.5%;
-
 }
 
 *,
 *::after,
 *::before {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
@@ -16,17 +15,16 @@ html{
 body {
     font-family: "Open Sans";
     color: #808080;
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
 }
 
+
 @import 'layout';
 @import 'headernavbar';
-
-
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
@@ -36,10 +34,9 @@ body {
 @import 'auth/signup';
 
 // ACCOUNT
-
-@import 'account/account-information';
-@import 'account/purchase-history';
 @import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
 
 // SHOP
 @import 'shop/shop';
@@ -52,7 +49,7 @@ body {
 
 // QUANTITY
 @import 'quantity';
-@import 'green-price-tag.scss';
+@import 'green-price-tag';
 
 // REVIEW
 @import 'order/review';
@@ -62,4 +59,4 @@ body {
 // INFORMATION
 @import 'information/payment';
 @import 'information/shipping';
-@import 'information/infoHelp'; 
+@import 'information/infoHelp';

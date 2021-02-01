@@ -12,13 +12,12 @@ function FormSearchBar(props) {
 }
 
 
-
 class ShopSearchBar extends Component {
     render() {
         const { className, handleSubmit } = this.props;
         return (
             <form onSubmit={handleSubmit} className={`${className} shop-search-bar`}>
-                <Field name='shop-search-bar' className='shop-search-bar__form-search-bar' placeholder='Search' component={FormSearchBar} />
+                <Field name='query' className='shop-search-bar__form-search-bar' placeholder='Search' component={FormSearchBar} />
             </form>
         )
     }    
@@ -28,4 +27,4 @@ ShopSearchBar = reduxForm({
     form: 'ShopSearchBar'
 })(ShopSearchBar);
 
-export default ShopSearchBar; 
+export default ShopSearchBar;

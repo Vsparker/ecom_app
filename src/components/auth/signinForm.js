@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { reduxForm, Field, } from 'redux-form';
+import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../formFields';
 import Details from '../details';
@@ -13,8 +13,8 @@ class SignInForm extends Component {
         const links = [
             {
                 _id: 0,
-                title: 'Not Registered? Create account here',
-                onClick: () => historypushState('/signup')
+                title: 'Not registered? Create account here',
+                onClick: () => history.push('/signup')
             },
             {
                 _id: 1,
@@ -23,29 +23,26 @@ class SignInForm extends Component {
             },
             {
                 _id: 2,
-                title: 'Forgot password?? Create account here',
+                title: 'Forgot password?',
                 onClick: () => console.log('forgot password')
             }
         ]
-        return(
+        return (
             <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
-
-               <Field className='sign-in-form__email'
-                type='email' 
-                title='Email' 
-                placeholder='email' 
-                name='email' 
+                <Field className='sign-in-form__email'
+                type='email'
+                title='Email'
+                placeholder='Email'
+                name='email'
                 component={FormInput}/>
-
-               <Field className='sign-in-form__password'
+                <Field className='sign-in-form__password'
                 type='password'
                 title='Password'
                 placeholder='Password'
                 name='password'
                 component={FormInput}/>
                 <div className='sign-in-form__line'></div>
-               <Field className='sign-in-form__login'
-                onClick={() => history.push('/account')}
+                <Field className='sign-in-form__login'
                 type='submit'
                 title='Login'
                 name='login'
@@ -57,7 +54,7 @@ class SignInForm extends Component {
 }
 
 SignInForm = reduxForm({
-    form:'SignInForm'
+    form: 'SignInForm'
 })(SignInForm);
 
 export default SignInForm;

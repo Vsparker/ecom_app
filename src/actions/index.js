@@ -8,13 +8,15 @@ import {
     fetchUserPurchases,
     setPurchaseDetail,
     fetchCartProducts,
-    addCartProduct
+    addCartProduct,
+    signIn
 } from './user';
 
 import {
     fetchShopCategories,
     fetchShopProducts,
-    filterProductsWithCategoryId
+    filterProductsWithCategoryId,
+    filterProductsWithQuery
 } from './shop';
 
 export {
@@ -25,9 +27,12 @@ export {
     fetchUserPurchases,
     setPurchaseDetail,
     fetchCartProducts,
-    
+    addCartProduct,
+    signIn,
+
     fetchShopCategories,
     fetchShopProducts,
-    addCartProduct,
-    filterProductsWithCategoryId
-}; 
+    filterProductsWithCategoryId,
+
+    filterProductsWithQuery
+};

@@ -5,9 +5,11 @@
     grid-column-gap: 30px;
 
     align-items: center;
+
     & > * {
         grid-row: s/e;
     }
+
     &__image {
         grid-column: image-s/image-e;
     }

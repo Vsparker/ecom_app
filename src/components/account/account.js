@@ -42,25 +42,22 @@ class Account extends Component {
         this.props.setNavbarLinks(navbarLinks);
     }
 
-
     renderContent() {
         let jsx;
         if(this.props.navbarLinks) {
-            this.props.navbarLinks.map(link => {
+            this.props.navbarLinks.forEach(link => {
                 if(link.active) {
-                    jsx = link.component
+                    jsx = link.component;
                 }
             })
         }
-    
-    return jsx;
-    
-}
+        return jsx;
+    }
 
     render() {
         return (
             <div className='account'>
-                {this.renderContent() }
+                { this.renderContent() }
             </div>
         )
     }
@@ -71,6 +68,6 @@ function mapStateToProps(state) {
     return { headerLinks, navbarLinks }
 }
 
-Account = connect(mapStateToProps, actions)(Account); 
+Account = connect(mapStateToProps, actions)(Account);
 
 export default Account;

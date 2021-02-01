@@ -24,7 +24,6 @@ class ShopProduct extends Component {
                 <div className='shop-product__front'>
                     <img className='shop-product__front__image' src='http://via.placeholder.com/220x220'/>
                     <div className='shop-product__front__title'>{title}</div>
-                    
                 </div>
                 <div className='shop-product__back'>
                     <div className='shop-product__back__title'>
@@ -46,4 +45,4 @@ class ShopProduct extends Component {
 
 ShopProduct = connect(null, actions)(ShopProduct);
 
-export default ShopProduct; 
+export default ShopProduct;

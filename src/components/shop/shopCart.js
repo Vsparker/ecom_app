@@ -1,4 +1,3 @@
-  
 import React, { Component } from 'react';
 import CartProduct from './cartProduct';
 
@@ -24,6 +23,7 @@ function CartContent({className, products}) {
         </div>
     )
 }
+
 function CartFooter({className, products}) {
     let subtotal = 0;
     products.map(cartProduct => {
@@ -31,14 +31,14 @@ function CartFooter({className, products}) {
     })
     return (
         <div className={`${className} cart-footer`}>
-        <a onClick={() => history.push('/order/review')} className='cart-footer__checkout'>
+            <a onClick={() => history.push('/order/review')} className='cart-footer__checkout'>
                 Checkout
             </a>
             <div className='cart-footer__subtotal'>
                 Subtotal
             </div>
             <div className='cart-footer__price'>
-            ${subtotal}
+                ${subtotal}
             </div>
         </div>
     )
@@ -58,11 +58,10 @@ class ShopCart extends Component {
         }
     }
 
-
     render() {
         const { className } = this.props;
         return (
-                <div id='shop-cart' className={`${className} shop-cart cart-hidden`}>
+            <div id='shop-cart' className={`${className} shop-cart cart-hidden`}>
                 <CartButton className='shop-cart__toggle' icon='fas fa-times' onClick={this.handleAddToCart}/>
                 <CartContent className='shop-cart__content' products={this.props.cartProducts}/>
             </div>
@@ -79,4 +78,4 @@ function mapStateToProps(state) {
 
 ShopCart = connect(mapStateToProps, actions)(ShopCart);
 
-export default ShopCart; 
+export default ShopCart;
